@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/insert', 'HomeController@store');
+Route::patch('/insert/{post}', 'HomeController@update');
